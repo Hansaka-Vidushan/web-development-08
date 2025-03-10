@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Project 08</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
     <!-- This Is Header Section -->
     <div>
         <header>
@@ -29,13 +30,24 @@
             Click
         </button>
 
-        <p id="para" hidden>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos possimus optio, repellendus rem architecto quam
+        <p id="para" hidden>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos possimus optio, repellendus
+            rem architecto quam
             temporibus magni enim accusamus deserunt, tempora minus nesciunt molestiae, expedita nam suscipit impedit
             debitis perspiciatis.</p>
 
         <button id="button2">
             Para Change
         </button>
+
+        <!-- Rounded switch -->
+
+
+        <p id="p1">Advance Mode
+            <label class="switch">
+                <input type="checkbox" id="check1">
+                <span class="slider round"></span>
+            </label>
+        </p>
 
 
 
@@ -54,15 +66,23 @@
             document.getElementById("name").innerHTML = " Hello" + "Vidushan";
         }
 
-        document.getElementById("button2").onclick= function(){
+        document.getElementById("button2").onclick = function () {
             document.getElementById("para").hidden = false;
+        }
+
+        document.getElementById("check1").onclick = function () {
+            if (document.getElementById("check1").checked) {
+                document.getElementById("body").style.backgroundColor = "green";
+            } else {
+                document.getElementById("body").style.backgroundColor = "white";
+            }
         }
 
 
 
 
     </script>
- 
+
 </body>
 
 </html>
