@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project 08</title>
+</head>
+
+<body>
+    <!-- This Is Header Section -->
+    <div>
+        <header>
+            <h1>
+                Java Script
+            </h1>
+        </header>
+
+    </div>
+
+    <!-- This is Body Section -->
+    <div>
+
+        <p id="name">
+            Hansaka
+        </p>
+
+        <button id="button1">
+            Click
+        </button>
+
+        <p id="para" hidden>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos possimus optio, repellendus rem architecto quam
+            temporibus magni enim accusamus deserunt, tempora minus nesciunt molestiae, expedita nam suscipit impedit
+            debitis perspiciatis.</p>
+
+        <button id="button2">
+            Para Change
+        </button>
+
+
+
+    </div>
+
+    <!-- This is Footer Section -->
+    <div>
+
+    </div>
+
+
+    <!-- This is java script internal -->
+    <script type="text/javascript">
+
+        document.getElementById("button1").onclick = function () {
+            document.getElementById("name").innerHTML = " Hello" + "Vidushan";
+        }
+
+        document.getElementById("button2").onclick= function(){
+            document.getElementById("para").hidden = false;
+        }
+
+
+
+
+    </script>
+ 
+</body>
+
+</html>
